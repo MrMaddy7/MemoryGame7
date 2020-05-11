@@ -54,7 +54,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      $("#level-title").text("Game Over let it be (lets blame riddhi for this), Press Reload to Restart");
+      $("#level-title").text("Game Over Its Riddhis Fault(zaude), Press Reload to Restart");
       
       startOver();
     }
