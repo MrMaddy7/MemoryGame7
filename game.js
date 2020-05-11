@@ -12,7 +12,7 @@ var level = 0;
  
 
 
-    $("#level-title").text("Level " + level);
+    $("#level-title").text("ALL THE BEST SIDDHI,starting the game ");
     setTimeout(function () { nextSequence(); }, 3000);
     
   
