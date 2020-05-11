@@ -7,13 +7,16 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
-  if (!started) {
+  alert("REMEMBER THE SEQUENCE OF SOUND GETTING PLAYED AND COPY THE SAME PATTERN");
+  alert("LISTEN UP A SOUND WILL BE PLAYED NOW");
+ 
+
+
     $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
+    setTimeout(function () { nextSequence(); }, 3000);
+    
+  
+
 
 $(".btn").click(function() {
 
@@ -51,7 +54,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#level-title").text("Game Over, Press Reload to Restart");
       
       startOver();
     }
@@ -73,7 +76,8 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  
+  var audio = new Audio("sounds/"+name+".mp3");
   audio.play();
 }
 
