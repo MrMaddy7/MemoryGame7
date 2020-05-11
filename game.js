@@ -7,7 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-  alert("WELCOME SMOCHIE ,YOU KNOW THE RULES AND SO DO I");
+  alert("WELCOME SIDDHI ,YOU KNOW THE RULES AND SO DO I");
  
  
 
