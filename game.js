@@ -7,8 +7,8 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-  alert("REMEMBER THE SEQUENCE OF SOUND GETTING PLAYED AND COPY THE SAME PATTERN");
-  alert("LISTEN UP A SOUND WILL BE PLAYED NOW");
+  alert("WELCOME SMOCHIE ,YOU KNOW THE RULES AND SO DO I");
+ 
  
 
 
@@ -54,7 +54,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
       }, 200);
 
-      $("#level-title").text("Game Over, Press Reload to Restart");
+      $("#level-title").text("Game Over let it be (lets blame riddhi for this), Press Reload to Restart");
       
       startOver();
     }
@@ -65,7 +65,7 @@ function nextSequence() {
 
   userClickedPattern = [];
   level++;
-  $("#level-title").text("Level " + level);
+  $("#level-title").text("SOOZIE's :Level " + level);
 
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColour = buttonColours[randomNumber];
